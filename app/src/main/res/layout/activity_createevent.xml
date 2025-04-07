@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Close Button -->
+    <ImageView
+        android:id="@+id/btnClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:src="@drawable/ic_close" />
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:text="Create event"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <!-- Event Name -->
+    <EditText
+        android:id="@+id/editEventName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/background_light"
+        android:hint="Event Name"
+        android:padding="12dp"
+        android:textSize="16sp" />
+
+    <!-- Date Picker -->
+    <EditText
+        android:id="@+id/editEventDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/background_light"
+        android:drawableEnd="@drawable/ic_calendar"
+        android:focusable="false"
+        android:hint="Choose Date"
+        android:padding="12dp" />
+
+    <!-- Time Picker -->
+    <EditText
+        android:id="@+id/editEventTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/background_light"
+        android:drawableEnd="@drawable/ic_calendar"
+        android:focusable="false"
+        android:hint="Choose Time"
+        android:padding="12dp" />
+
+    <!-- Location -->
+    <EditText
+        android:id="@+id/editEventLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/background_light"
+        android:drawableEnd="@drawable/ic_location"
+        android:hint="Location"
+        android:padding="12dp" />
+
+    <!-- Speaker Section -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Speakers"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/addSpeaker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:drawableEnd="@drawable/ic_add"
+        android:text="Add speakers"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="14sp" />
+
+    <!-- Capacity -->
+    <EditText
+        android:id="@+id/editEventCapacity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableEnd="@drawable/ic_people"
+
+        android:hint="Capacity"
+        android:padding="12dp" />
+    <!-- Event Image Preview -->
+    <ImageView
+        android:id="@+id/eventImagePreview"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginBottom="8dp"
+        android:background="@android:color/darker_gray"
+        android:contentDescription="Event Image"
+        android:scaleType="centerCrop" />
+
+    <!-- Upload Image Button -->
+    <Button
+        android:id="@+id/btnUploadImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:backgroundTint="@android:color/holo_purple"
+        android:text="Upload Image"
+        android:textColor="@android:color/white" />
+
+    <!-- Bottom Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@android:color/darker_gray"
+            android:text="Delete" />
+
+        <Button
+            android:id="@+id/btnPublish"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@android:color/holo_purple"
+            android:text="Publish"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+</LinearLayout>
