@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "557688952961",
+    "project_id": "eventflow-c3fcc",
+    "storage_bucket": "eventflow-c3fcc.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:557688952961:android:763f4b273dfe7cdd7c1580",
+        "android_client_info": {
+          "package_name": "com.example.eventflow"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACZa7lwiFdk8YoURRyVMiEsdGHNgC_9nE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
